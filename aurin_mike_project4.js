@@ -12,6 +12,19 @@ if (myOtherNumber.length === myTelephone.length) {
 	console.log(true); 
 	} else {
 		console.log(false)
+
 };
 	
 	
+//Question 2
+// Does an email contain a ".com" in the string
+
+var validEmail = "abc@fullsail.edu";
+var userEmail = "mikeaurin@fullsail.edu";
+
+if (userEmail === validEmail.indexOf(12-15)) {
+		console.log("Email authenticated");
+		} else {
+			console.log("Please enter a valid Email")	
+		
+}
