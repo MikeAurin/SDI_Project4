@@ -23,8 +23,24 @@ var validEmail = "abc@fullsail.edu";
 var userEmail = "mikeaurin@fullsail.edu";
 
 if (userEmail === validEmail.indexOf(12-15)) {
-		console.log("Email authenticated");
+		console.log(true);
 		} else {
-			console.log("Please enter a valid Email")	
+			console.log(false)	
 		
 }
+
+// Question 3
+// Does a string begin with "http://" or "https://"
+
+var myWebsite = "http://www.droid-life.com"
+var myOtherWebsite = "https://www.phonearena.com"
+
+if (myWebsite.indexOf(0-6) === "http://") {
+	console.log(true)
+		} else { 
+			console.log(false)
+}	if (myOtherWebsite.indexOf(0-7) === "https://") {
+		console.log(true)
+		} else {
+			console.log(false)
+};
