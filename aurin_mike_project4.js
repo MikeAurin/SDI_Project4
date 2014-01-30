@@ -9,25 +9,24 @@ var myTelephone = "407-400-4321";
 var myOtherNumber = "123-456-7890";
 
 if (myOtherNumber.length === myTelephone.length) {
-	console.log(true); 
+	console.log("Question 1: " + true); 
 	} else {
-		console.log(false)
+		console.log("Question 1: " + false)
 
 };
 	
 	
 //Question 2
-// Does an email contain a ".com" in the string
+// Does an email contain a ".edu" in the string
 
-var validEmail = "abc@fullsail.edu";
-var userEmail = "mikeaurin@fullsail.edu";
 
-if (userEmail === validEmail.indexOf(12-15)) {
-		console.log(true);
-		} else {
-			console.log(false)	
-		
-}
+myEmail = "mikeaurin@fullsail.edu";
+emailCharacters = myEmail.match(["a-z"]+ "@" + ["a-z",".","a-z"]);
+if (emailCharacters != myEmail) {
+    console.log("Question 2: " + myEmail + " is a valid email address.");
+	} else {
+		console.log("Question 2: " + "Please enter a valid email address.");
+};
 
 // Question 3
 // Does a string begin with "http://" or "https://"
@@ -35,14 +34,14 @@ if (userEmail === validEmail.indexOf(12-15)) {
 var myWebsite = "http://www.droid-life.com";
 var myOtherWebsite = "https://www.phonearena.com";
 
-if (myWebsite.indexOf(0-6) === "http://") {
-	console.log(true)
+if (myWebsite.indexOf(0,6) != "http://") {
+	console.log("Question 3: " + true)
 		} else { 
-			console.log(false)
-}	if (myOtherWebsite.indexOf(0-7) === "https://") {
-		console.log(true)
+			console.log("Question 3: " + false)
+}	if (myOtherWebsite.indexOf(0,7) != "https://") {
+		console.log("Question 3: " + true)
 		} else {
-			console.log(false)
+			console.log("Question 3: " + false)
 };
 
 // Question 4
@@ -88,9 +87,13 @@ console.log(myValue);
 // Question 10
 // Find a value in an array greater than a given number
 
-myArray[2,4,6,8,10]; {
-	{	if (myArray[4] = 8) 
-		return myArray[5]
-	}
-};
-conosle.log myArray[4];
+
+
+// Question 11
+// Find the total value of an array even if some values aren't numbers
+
+//myArray[3, "phone", 6, "12", "couch", 20];
+
+
+// Question 12
+// Given an array and a given key, return the sorted array.
