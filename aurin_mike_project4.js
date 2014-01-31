@@ -47,18 +47,14 @@ if (myWebsite.indexOf(0,6) != "http://") {
 // Question 4
 //  Take a string that is all lowercase and uppercase the first letter of each word
 
-var myString = "every word in this sentence needs to be capitalized!";
-
-function convertCase() 
-myString.substr(0,6,11,14,19,28,34,37,40).toUpperCase()
-console.log(myString);
 
 //Question 5
 // Replacing string separators with different characters
 
-var myString = "5/4/3/2/1/";
-var newString = myString.replace("/",",");
-console.log(newString);
+var myString = ("1/2/3/4/5");
+
+
+console.log(myString);
 
 //Question 6
 // Format a number to a specific number of decimal places
@@ -80,8 +76,8 @@ var myNumber = 3.1415995123;
 // Question 9 
 // Give a string version of a number and return an actual number
 
-myValue = "15";
-parseInt.myValue;
+var myValue = "15";
+myValue = parseInt("15");
 console.log(myValue);
 
 // Question 10
