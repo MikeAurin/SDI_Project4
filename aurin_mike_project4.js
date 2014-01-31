@@ -46,22 +46,29 @@ if (myWebsite.indexOf(0,6) != "http://") {
 
 // Question 4
 //  Take a string that is all lowercase and uppercase the first letter of each word
+var string = "uppercase this sentence.";
 
+function capitalizeString(string)
+{
+    string = string.charAt(0).toUpperCase() + string.slice(1);
+    return string;
+}
+console.log("Question 4: " + string)
 
 //Question 5
 // Replacing string separators with different characters
 
-var myString = ("1/2/3/4/5");
 
+var myString = "1 2 3 4 5";
+var mySeparatedString = myString.split(" ");
 
-console.log(myString);
+console.log("Question 5: " + mySeparatedString);
 
 //Question 6
 // Format a number to a specific number of decimal places
 
-var myNumber = 3.1415995123;
-//myNumber - myNumber.substring(4-11);
-//console.log(myNumber)
+var myRidiculousNumber = 5.489487342;
+console.log("Question 6: " + myRidiculousNumber.toFixed(2));
 
 // Question 7
 // Is this number below or above a number with a certain percent
@@ -70,7 +77,25 @@ var myNumber = 3.1415995123;
 
 // Question 8
 // Find the Number of days difference between two dates
+var sisterBirthday = "2014-02-19";
+var myBirthday = "2014-08-22";
 
+sisterBirthday = sisterBirthday.split('-');
+myBirthday = myBirthday.split('-');
+
+sisterBirthday = new Date(sisterBirthday[0], sisterBirthday[1], sisterBirthday[2]);
+myBirthday = new Date(myBirthday[0], myBirthday[1], myBirthday[2]);
+
+sisterBirthday_unixtime = parseInt(sisterBirthday.getTime() / 1000);
+myBirthday_unixtime = parseInt(myBirthday.getTime() / 1000);
+
+var timeDifference = myBirthday_unixtime - sisterBirthday_unixtime;
+
+var timeDifferenceInHours = timeDifference / 60 / 60;
+
+var timeDifferenceInDays = timeDifferenceInHours  / 24;
+
+console.log("Question 8: " + timeDifferenceInDays + " between my sister's birthday and my birthday.");
 
 
 // Question 9 
@@ -78,7 +103,7 @@ var myNumber = 3.1415995123;
 
 var myValue = "15";
 myValue = parseInt("15");
-console.log(myValue);
+console.log("Question 9: " + myValue);
 
 // Question 10
 // Find a value in an array greater than a given number
